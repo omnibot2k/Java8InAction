@@ -18,6 +18,11 @@ public class MeaningOfThis
 	public static void main(String...args)
 	{       
 		MeaningOfThis m = new MeaningOfThis();
-		m.doIt(); // ???   
+		m.doIt(); // ???
+
+		//mine
+		Runnable r = () -> System.out.println("this has more meaning!!");
+		Thread t = new Thread(r);
+		t.start();
 	}
 }
